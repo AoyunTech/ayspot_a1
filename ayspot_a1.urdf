@@ -1,0 +1,632 @@
+<?xml version="1.0" ?>
+<robot name="ayspot_a1">
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="6.9e-05 -9.6e-05 0.012503"/>
+    <mass value="7.464971"/>
+    <inertia ixx="0.062659" ixy="-2.2e-05" ixz="7e-06" iyy="0.056069" iyz="-1.6e-05" izz="0.096919"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/base_link_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RF_HIP_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.023084999999999994 -0.006782999999999997 0.0"/>
+    <mass value="1.435534"/>
+    <inertia ixx="0.001763" ixy="4.1e-05" ixz="-0.0" iyy="0.002514" iyz="0.0" izz="0.001514"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1808 0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_HIP_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1808 0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_HIP_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RF_THIGH_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.099999999997549e-05 0.029670000000000002 -0.014095"/>
+    <mass value="1.935409"/>
+    <inertia ixx="0.005387" ixy="-2e-06" ixz="-0.009365" iyy="0.005003" iyz="0.008452" izz="0.002334"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1808 0.1588 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_THIGH_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1808 0.1588 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_THIGH_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RF_SHANK_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.006315999999999988 0.0 -0.06808900000000001"/>
+    <mass value="0.548756"/>
+    <inertia ixx="0.002627" ixy="0.0" ixz="-0.041334" iyy="0.002673" iyz="0.041365" izz="9.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.180842 0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_SHANK_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.180842 0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_SHANK_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RF_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00023299999999998322 0.0 -0.0009009999999999851"/>
+    <mass value="0.033834"/>
+    <inertia ixx="6e-06" ixy="-0.0" ixz="-0.003794" iyy="5e-06" iyz="0.003794" izz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.180859 0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_FOOT_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.180859 0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RF_FOOT_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LF_HIP_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.023084999999999994 0.006782999999999997 0.0"/>
+    <mass value="1.435533"/>
+    <inertia ixx="0.001763" ixy="-4.1e-05" ixz="-0.0" iyy="0.002514" iyz="-0.0" izz="0.001514"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1808 -0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_HIP_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1808 -0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_HIP_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LF_THIGH_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.100000000000325e-05 -0.029670000000000002 -0.014095"/>
+    <mass value="1.935409"/>
+    <inertia ixx="0.005387" ixy="-2e-06" ixz="-0.0005" iyy="0.005003" iyz="0.001412" izz="0.002335"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1808 -0.1588 -0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_THIGH_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1808 -0.1588 -0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_THIGH_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LF_SHANK_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.006315999999999988 0.0 -0.06808900000000001"/>
+    <mass value="0.548756"/>
+    <inertia ixx="0.002626" ixy="-0.0" ixz="-0.003465" iyy="0.002673" iyz="0.003496" izz="9.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.180758 -0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_SHANK_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.180758 -0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_SHANK_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LF_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00023299999999998322 0.0 -0.0009009999999999851"/>
+    <mass value="0.033834"/>
+    <inertia ixx="6e-06" ixy="0.0" ixz="-0.000251" iyy="5e-06" iyz="0.000251" izz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.180775 -0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_FOOT_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.180775 -0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LF_FOOT_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RH_HIP_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.023084999999999994 -0.006782999999999997 0.0"/>
+    <mass value="1.435533"/>
+    <inertia ixx="0.001763" ixy="-4.1e-05" ixz="0.0" iyy="0.002514" iyz="0.0" izz="0.001514"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.1808 0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_HIP_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.1808 0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_HIP_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RH_THIGH_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.100000000000325e-05 0.029670000000000002 -0.014095"/>
+    <mass value="1.935409"/>
+    <inertia ixx="0.005387" ixy="-2e-06" ixz="0.0005" iyy="0.005003" iyz="-0.001412" izz="0.002335"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.1808 0.1588 -0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_THIGH_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.1808 0.1588 -0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_THIGH_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RH_SHANK_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.006315999999999988 0.0 -0.06808900000000001"/>
+    <mass value="0.548756"/>
+    <inertia ixx="0.002627" ixy="-0.0" ixz="0.001953" iyy="0.002673" iyz="-0.001921" izz="9.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.180758 0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_SHANK_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.180758 0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_SHANK_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="RH_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00023299999999998322 0.0 -0.0009009999999999851"/>
+    <mass value="0.033834"/>
+    <inertia ixx="6e-06" ixy="0.0" ixz="0.000256" iyy="5e-06" iyz="-0.000256" izz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.180741 0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_FOOT_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.180741 0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/RH_FOOT_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LH_HIP_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.023084999999999994 0.006782999999999997 0.0"/>
+    <mass value="1.435534"/>
+    <inertia ixx="0.001763" ixy="4.1e-05" ixz="0.0" iyy="0.002514" iyz="-0.0" izz="0.001514"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.1808 -0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_HIP_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.1808 -0.065 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_HIP_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LH_THIGH_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="3.099999999997549e-05 -0.029670000000000002 -0.014095"/>
+    <mass value="1.935409"/>
+    <inertia ixx="0.005387" ixy="-2e-06" ixz="0.009365" iyy="0.005003" iyz="-0.008452" izz="0.002334"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.1808 -0.1588 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_THIGH_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.1808 -0.1588 0.0"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_THIGH_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LH_SHANK_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.006316000000000016 0.0 -0.06808900000000001"/>
+    <mass value="0.548756"/>
+    <inertia ixx="0.002626" ixy="-0.0" ixz="0.039821" iyy="0.002673" iyz="-0.03979" izz="9.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.180842 -0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_SHANK_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.180842 -0.15813 0.150054"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_SHANK_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<link name="LH_FOOT_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00023299999999998322 0.0 -0.0009009999999999851"/>
+    <mass value="0.033834"/>
+    <inertia ixx="6e-06" ixy="-0.0" ixz="0.003798" iyy="5e-06" iyz="-0.003798" izz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.180825 -0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_FOOT_1_m-binary.stl"/>
+    </geometry>
+    <material name="silver">
+      <color rgba="1 0 0 1"/>
+    </material>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.180825 -0.15813 0.330081"/>
+    <geometry>
+      <mesh filename="package://fusion2urdf/ayspot_a1/bin_stl/LH_FOOT_1_m-binary.stl"/>
+    </geometry>
+  </collision>
+</link>
+<joint name="RF_HIP_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="0.1808 -0.065 0.0"/>
+  <parent link="base_link"/>
+  <child link="RF_HIP_1"/>
+  <axis xyz="0.01 0.0 0.0"/>
+</joint>
+<transmission name="RF_HIP_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RF_HIP_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RF_HIP_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RF_THIGH_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.0938 0.0"/>
+  <parent link="RF_HIP_1"/>
+  <child link="RF_THIGH_1"/>
+  <axis xyz="0.0 0.01 0.0"/>
+</joint>
+<transmission name="RF_THIGH_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RF_THIGH_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RF_THIGH_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RF_SHANK_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="4.2e-05 0.00067 -0.150054"/>
+  <parent link="RF_THIGH_1"/>
+  <child link="RF_SHANK_1"/>
+  <axis xyz="0.0 0.01 -0.0"/>
+</joint>
+<transmission name="RF_SHANK_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RF_SHANK_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RF_SHANK_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RF_FOOT_rigid" type="fixed">
+  <origin rpy="0 0 0" xyz="1.7e-05 0.0 -0.180027"/>
+  <parent link="RF_SHANK_1"/>
+  <child link="RF_FOOT_1"/>
+</joint>
+<transmission name="RF_FOOT_rigid_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RF_FOOT_rigid">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RF_FOOT_rigid_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LF_HIP_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="0.1808 0.065 0.0"/>
+  <parent link="base_link"/>
+  <child link="LF_HIP_1"/>
+  <axis xyz="0.01 0.0 0.0"/>
+</joint>
+<transmission name="LF_HIP_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LF_HIP_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LF_HIP_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LF_THIGH_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0938 0.0"/>
+  <parent link="LF_HIP_1"/>
+  <child link="LF_THIGH_1"/>
+  <axis xyz="0.0 0.01 0.0"/>
+</joint>
+<transmission name="LF_THIGH_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LF_THIGH_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LF_THIGH_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LF_SHANK_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="-4.2e-05 -0.00067 -0.150054"/>
+  <parent link="LF_THIGH_1"/>
+  <child link="LF_SHANK_1"/>
+  <axis xyz="0.0 0.01 0.0"/>
+</joint>
+<transmission name="LF_SHANK_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LF_SHANK_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LF_SHANK_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LF_FOOT_rigid" type="fixed">
+  <origin rpy="0 0 0" xyz="1.7e-05 0.0 -0.180027"/>
+  <parent link="LF_SHANK_1"/>
+  <child link="LF_FOOT_1"/>
+</joint>
+<transmission name="LF_FOOT_rigid_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LF_FOOT_rigid">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LF_FOOT_rigid_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RH_HIP_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.1808 -0.065 0.0"/>
+  <parent link="base_link"/>
+  <child link="RH_HIP_1"/>
+  <axis xyz="0.01 0.0 0.0"/>
+</joint>
+<transmission name="RH_HIP_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RH_HIP_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RH_HIP_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RH_THIGH_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.0938 0.0"/>
+  <parent link="RH_HIP_1"/>
+  <child link="RH_THIGH_1"/>
+  <axis xyz="0.0 0.01 -0.0"/>
+</joint>
+<transmission name="RH_THIGH_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RH_THIGH_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RH_THIGH_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RH_SHANK_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="4.2e-05 0.00067 -0.150054"/>
+  <parent link="RH_THIGH_1"/>
+  <child link="RH_SHANK_1"/>
+  <axis xyz="0.0 0.01 -0.0"/>
+</joint>
+<transmission name="RH_SHANK_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RH_SHANK_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RH_SHANK_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="RH_FOOT_rigid" type="fixed">
+  <origin rpy="0 0 0" xyz="1.7e-05 0.0 -0.180027"/>
+  <parent link="RH_SHANK_1"/>
+  <child link="RH_FOOT_1"/>
+</joint>
+<transmission name="RH_FOOT_rigid_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="RH_FOOT_rigid">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="RH_FOOT_rigid_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LH_HIP_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.1808 0.065 0.0"/>
+  <parent link="base_link"/>
+  <child link="LH_HIP_1"/>
+  <axis xyz="0.01 0.0 0.0"/>
+</joint>
+<transmission name="LH_HIP_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LH_HIP_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LH_HIP_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LH_THIGH_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0938 0.0"/>
+  <parent link="LH_HIP_1"/>
+  <child link="LH_THIGH_1"/>
+  <axis xyz="-0.0 0.01 -0.0"/>
+</joint>
+<transmission name="LH_THIGH_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LH_THIGH_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LH_THIGH_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LH_SHANK_rotate" type="continuous">
+  <origin rpy="0 0 0" xyz="-4.2e-05 -0.00067 -0.150054"/>
+  <parent link="LH_THIGH_1"/>
+  <child link="LH_SHANK_1"/>
+  <axis xyz="0.0 0.01 -0.0"/>
+</joint>
+<transmission name="LH_SHANK_rotate_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LH_SHANK_rotate">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LH_SHANK_rotate_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<joint name="LH_FOOT_rigid" type="fixed">
+  <origin rpy="0 0 0" xyz="1.7e-05 0.0 -0.180027"/>
+  <parent link="LH_SHANK_1"/>
+  <child link="LH_FOOT_1"/>
+</joint>
+<transmission name="LH_FOOT_rigid_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="LH_FOOT_rigid">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="LH_FOOT_rigid_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+<gazebo>
+  <plugin filename="libgazebo_ros_control.so" name="control"/>
+</gazebo>
+</robot>
