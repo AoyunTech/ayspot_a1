@@ -374,11 +374,13 @@
     </geometry>
   </collision>
 </link>
-<joint name="RF_HIP_rotate" type="continuous">
+<joint name="RF_HIP_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="0.1808 -0.065 0.0"/>
   <parent link="base_link"/>
   <child link="RF_HIP_1"/>
   <axis xyz="0.01 0.0 0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="RF_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -390,11 +392,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="RF_THIGH_rotate" type="continuous">
+<joint name="RF_THIGH_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="0.0 -0.0938 0.0"/>
   <parent link="RF_HIP_1"/>
   <child link="RF_THIGH_1"/>
   <axis xyz="0.0 0.01 0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="RF_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -406,11 +410,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="RF_SHANK_rotate" type="continuous">
+<joint name="RF_SHANK_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="4.2e-05 0.00067 -0.150054"/>
   <parent link="RF_THIGH_1"/>
   <child link="RF_SHANK_1"/>
   <axis xyz="0.0 0.01 -0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="RF_SHANK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -437,11 +443,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="LF_HIP_rotate" type="continuous">
+<joint name="LF_HIP_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="0.1808 0.065 0.0"/>
   <parent link="base_link"/>
   <child link="LF_HIP_1"/>
   <axis xyz="0.01 0.0 0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="LF_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -453,11 +461,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="LF_THIGH_rotate" type="continuous">
+<joint name="LF_THIGH_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="0.0 0.0938 0.0"/>
   <parent link="LF_HIP_1"/>
   <child link="LF_THIGH_1"/>
   <axis xyz="0.0 0.01 0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="LF_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -469,11 +479,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="LF_SHANK_rotate" type="continuous">
+<joint name="LF_SHANK_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="-4.2e-05 -0.00067 -0.150054"/>
   <parent link="LF_THIGH_1"/>
   <child link="LF_SHANK_1"/>
   <axis xyz="0.0 0.01 0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="LF_SHANK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -500,11 +512,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="RH_HIP_rotate" type="continuous">
+<joint name="RH_HIP_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="-0.1808 -0.065 0.0"/>
   <parent link="base_link"/>
   <child link="RH_HIP_1"/>
   <axis xyz="0.01 0.0 0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="RH_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -516,11 +530,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="RH_THIGH_rotate" type="continuous">
+<joint name="RH_THIGH_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="0.0 -0.0938 0.0"/>
   <parent link="RH_HIP_1"/>
   <child link="RH_THIGH_1"/>
   <axis xyz="0.0 0.01 -0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="RH_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -532,11 +548,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="RH_SHANK_rotate" type="continuous">
+<joint name="RH_SHANK_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="4.2e-05 0.00067 -0.150054"/>
   <parent link="RH_THIGH_1"/>
   <child link="RH_SHANK_1"/>
   <axis xyz="0.0 0.01 -0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="RH_SHANK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -563,11 +581,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="LH_HIP_rotate" type="continuous">
+<joint name="LH_HIP_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="-0.1808 0.065 0.0"/>
   <parent link="base_link"/>
   <child link="LH_HIP_1"/>
   <axis xyz="0.01 0.0 0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="LH_HIP_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -579,11 +599,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="LH_THIGH_rotate" type="continuous">
+<joint name="LH_THIGH_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="0.0 0.0938 0.0"/>
   <parent link="LH_HIP_1"/>
   <child link="LH_THIGH_1"/>
   <axis xyz="-0.0 0.01 -0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="LH_THIGH_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
@@ -595,11 +617,13 @@
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
-<joint name="LH_SHANK_rotate" type="continuous">
+<joint name="LH_SHANK_rotate" type="revolute">
   <origin rpy="0 0 0" xyz="-4.2e-05 -0.00067 -0.150054"/>
   <parent link="LH_THIGH_1"/>
   <child link="LH_SHANK_1"/>
   <axis xyz="0.0 0.01 -0.0"/>
+  <!-- Joint limits -->
+  <limit effort="5.0" lower="-0.7" upper="0.7" velocity="0.5"/>
 </joint>
 <transmission name="LH_SHANK_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
